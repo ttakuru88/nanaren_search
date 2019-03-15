@@ -2,18 +2,37 @@ import * as React from 'react';
 import {render} from 'react-dom';
 import Item from './item'
 
-Item.init()
+interface AppProps {}
+interface AppState {
+  currentItem: Item
+}
 
-class App extends React.Component {
-  clickItem(item: any) {
-    console.log(item)
+class App extends React.Component<AppProps, AppState> {
+  constructor(props: AppProps) {
+    super(props)
+
+    this.state = {
+      currentItem: null
+    }
   }
+
+  clickItem(item: Item) {
+    this.setState({currentItem: item})
+  }
+
   render () {
-    return <ul>
-      {Item.records.map((item) =>
-        <li key={item.id} onClick={this.clickItem.bind(this, item)}>{item.name}</li>
-      )}
-    </ul>
+    let currentItemArea: any = null
+    if(this.state.currentItem) {
+      currentItemArea = <div>{this.state.currentItem.name}</div>
+    }
+
+    return <div><ul>
+        {Item.records.map((item) =>
+          <li key={item.id} onClick={this.clickItem.bind(this, item)}>{item.name}</li>
+        )}
+      </ul>
+      {currentItemArea}
+    </div>
   }
 }
 

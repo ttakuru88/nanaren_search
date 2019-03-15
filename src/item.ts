@@ -33,3 +33,5 @@ export default class Item extends Model {
     ]
   }
 }
+
+Item.init()
