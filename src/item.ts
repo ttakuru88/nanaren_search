@@ -64,6 +64,10 @@ export default class Item extends Model {
       {id: 24, name: 'ビーカー', kind: 0, rea: 2, dropBy: [], treasureFrom: [] },
       {id: 25, name: 'ゴルナイト', kind: 0, rea: 2, dropBy: [], treasureFrom: [] },
       {id: 26, name: '発火灰', kind: 0, rea: 2, dropBy: [], treasureFrom: [15, 16] },
+      {id: 27, name: 'ヘボナ隕鉄', kind: 0, rea: 2, dropBy: [], treasureFrom: [] },
+      {id: 28, name: '硫黄塊', kind: 0, rea: 2, dropBy: [], treasureFrom: [15] },
+      {id: 29, name: '幽か火', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
+      {id: 30, name: 'メニスの炎', kind: 0, rea: 2, dropBy: [], treasureFrom: [] },
     ]
   }
 }
