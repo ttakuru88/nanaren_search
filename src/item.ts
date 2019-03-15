@@ -1,5 +1,6 @@
 import Model from './model'
 import Enemy from './enemy'
+import Adventure from './adventure'
 // kind: mat: 0, anima: 1, aroma: 2, acs: 3
 
 export default class Item extends Model {
@@ -21,6 +22,12 @@ export default class Item extends Model {
   enemies(): Enemy[] {
     return this.dropBy.map((enemyId) => {
       return Enemy.find(enemyId)
+    })
+  }
+
+  adventures(): Adventure[] {
+    return this.treasureFrom.map((adventureId) => {
+      return Adventure.find(adventureId)
     })
   }
 

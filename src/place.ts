@@ -20,3 +20,5 @@ export default class Place extends Model {
     ]
   }
 }
+
+Place.init()

@@ -1,4 +1,5 @@
 import Model from './model'
+import Place from './place'
 
 export default class Adventure extends Model {
   placeId: number
@@ -10,6 +11,10 @@ export default class Adventure extends Model {
     this.placeId = data.placeId
     this.name = data.name
     this.minutes = data.minutes
+  }
+
+  place(): Place {
+    return Place.find(this.placeId)
   }
 
   static data() : any[] {
@@ -40,3 +45,5 @@ export default class Adventure extends Model {
     ]
   }
 }
+
+Adventure.init()

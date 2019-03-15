@@ -33,3 +33,5 @@ export default class Recipe extends Model {
     ]
   }
 }
+
+Recipe.init()

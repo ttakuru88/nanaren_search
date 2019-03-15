@@ -27,6 +27,9 @@ class App extends React.Component<AppProps, AppState> {
       currentItemArea = <div>
         {this.state.currentItem.name}
         <ul>
+          {this.state.currentItem.adventures().map((adventure) =>
+            <li key={adventure.id}>探索: {adventure.place().name} -> {adventure.name}</li>
+          )}
           {this.state.currentItem.enemies().map((enemy) =>
             <li key={enemy.id}>討伐: {enemy.name}</li>
           )}
