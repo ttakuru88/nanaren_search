@@ -88,6 +88,16 @@ export default class Item extends Model {
       {id: 48, name: 'リバーシャボン', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
       {id: 49, name: '天藍石', kind: 0, rea: 3, dropBy: [], treasureFrom: [16] },
       {id: 50, name: 'ロズライト', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 51, name: '透蟹の甲羅', kind: 0, rea: 3, dropBy: [], treasureFrom: [5] },
+      {id: 52, name: '玉虫色の翅', kind: 0, rea: 3, dropBy: [], treasureFrom: [19] },
+      {id: 53, name: 'フラスコ', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 54, name: 'ミツバ苔', kind: 0, rea: 2, dropBy: [], treasureFrom: [23] },
+      {id: 55, name: 'アカイバラ', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 56, name: 'マナプラント', kind: 0, rea: 4, dropBy: [], treasureFrom: [] },
+      {id: 57, name: '星の砂', kind: 0, rea: 2, dropBy: [], treasureFrom: [20] },
+      {id: 58, name: 'イブンの粉末', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 59, name: 'グラビティメタル', kind: 0, rea: 3, dropBy: [], treasureFrom: [16] },
+      {id: 60, name: 'オリハルコン', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
     ]
   }
 }

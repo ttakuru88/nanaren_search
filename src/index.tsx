@@ -60,11 +60,11 @@ class App extends React.Component<AppProps, AppState> {
     }
 
     return <div>
-      <ul>
+      <div>
         {Item.records.map((item) =>
-          <li key={item.id}><a href="#" onClick={this.clickItem.bind(this, item)}>{item.name}</a></li>
+          <span key={item.id}>・<a href="#" onClick={this.clickItem.bind(this, item)}>{item.name}</a></span>
         )}
-      </ul>
+      </div>
       {currentItemArea}
     </div>
   }
