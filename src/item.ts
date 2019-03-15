@@ -48,6 +48,8 @@ export default class Item extends Model {
       {id: 8, name: 'ガラスの破片', kind: 0, rea: 1, dropBy: [], treasureFrom: [6, 7] },
       {id: 9, name: '黒焦げのなにか', kind: 0, rea: 1, dropBy: [], treasureFrom: [7] },
       {id: 10, name: '石ころ', kind: 0, rea: 1, dropBy: [], treasureFrom: [1, 13, 14, 15, 16, 20] },
+      {id: 11, name: 'ベル水晶', kind: 0, rea: 1, dropBy: [], treasureFrom: [7, 9, 13, 14, 15, 18, 19] },
+      {id: 12, name: 'ベル星水晶', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
     ]
   }
 }
