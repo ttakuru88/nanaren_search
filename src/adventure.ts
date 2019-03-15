@@ -1,6 +1,17 @@
 import Model from './model'
 
 export default class Adventure extends Model {
+  placeId: number
+  name: string
+  minutes: number
+
+  constructor(data: any) {
+    super(data)
+    this.placeId = data.placeId
+    this.name = data.name
+    this.minutes = data.minutes
+  }
+
   static data() : any[] {
     return [
       {id: 1, placeId: 1, name: 'はじまりの森', minutes: 3},

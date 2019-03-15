@@ -1,6 +1,13 @@
 import Model from './model'
 
 export default class Place extends Model {
+  name: string
+
+  constructor(data: any) {
+    super(data)
+    this.name = data.name
+  }
+
   static data() : any[] {
     return [
       {id: 1, name: '錬金都市アルケミナ'},
