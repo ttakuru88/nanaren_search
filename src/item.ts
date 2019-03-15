@@ -78,6 +78,16 @@ export default class Item extends Model {
       {id: 38, name: '麻の布', kind: 0, rea: 1, dropBy: [], treasureFrom: [22] },
       {id: 39, name: 'コルブオイル', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
       {id: 40, name: '丸磨サボテン', kind: 0, rea: 3, dropBy: [], treasureFrom: [17] },
+      {id: 41, name: 'オルド水銀', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 42, name: 'アマルガム', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 43, name: '丙蹄の大角', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 44, name: 'クシダの葉', kind: 0, rea: 1, dropBy: [], treasureFrom: [9] },
+      {id: 45, name: 'オークの厚板', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 46, name: '妖精の薄羽', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
+      {id: 47, name: '粘土', kind: 0, rea: 1, dropBy: [], treasureFrom: [2, 6, 7, 8, 9, 10, 23] },
+      {id: 48, name: 'リバーシャボン', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 49, name: '天藍石', kind: 0, rea: 3, dropBy: [], treasureFrom: [16] },
+      {id: 50, name: 'ロズライト', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
     ]
   }
 }
