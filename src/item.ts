@@ -38,8 +38,8 @@ export default class Item extends Model {
 
   static data() : any[] {
     return [
-      {id: 1, name: 'わらの束', kind: 0, rea: 1, dropBy: [], treasureFrom: [2, 6, 10, 11, 12, 13] },
-      {id: 2, name: '木の枝', kind: 0, rea: 1, dropBy: [26], treasureFrom: [1, 2, 4, 6, 9, 12, 21, 22, 23] },
+      {id: 1, name: 'わらの束', kind: 0, rea: 1, dropBy: [], treasureFrom: [2, 6, 10, 11, 12, 13, 21] },
+      {id: 2, name: '木の枝', kind: 0, rea: 1, dropBy: [26], treasureFrom: [1, 2, 4, 6, 9, 12, 21, 22, 23, 21] },
       {id: 3, name: '丈夫な縄', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
       {id: 4, name: '葉の雫', kind: 0, rea: 1, dropBy: [], treasureFrom: [3, 4, 5, 22] },
       {id: 5, name: 'ヒワリの種', kind: 0, rea: 1, dropBy: [], treasureFrom: [3] },
@@ -50,6 +50,20 @@ export default class Item extends Model {
       {id: 10, name: '石ころ', kind: 0, rea: 1, dropBy: [], treasureFrom: [1, 13, 14, 15, 16, 20] },
       {id: 11, name: 'ベル水晶', kind: 0, rea: 1, dropBy: [], treasureFrom: [7, 9, 13, 14, 15, 18, 19] },
       {id: 12, name: 'ベル星水晶', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
+      {id: 13, name: 'トモシキノコ', kind: 0, rea: 1, dropBy: [], treasureFrom: [13] },
+      {id: 14, name: 'オノキの丸太', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
+      {id: 15, name: '野犬の爪', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
+      {id: 16, name: 'グラフ石筆', kind: 0, rea: 2, dropBy: [], treasureFrom: [14] },
+      {id: 17, name: '力拳の指南書', kind: 0, rea: 2, dropBy: [], treasureFrom: [] },
+      {id: 18, name: 'モミデの樹液', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
+      {id: 19, name: '回復の指南書', kind: 0, rea: 2, dropBy: [], treasureFrom: [] },
+      {id: 20, name: 'メテオ石', kind: 0, rea: 2, dropBy: [], treasureFrom: [16] },
+      {id: 21, name: '速上の指南書', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 22, name: '緑柱石', kind: 0, rea: 2, dropBy: [], treasureFrom: [14] },
+      {id: 23, name: '亜鉛鉱', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
+      {id: 24, name: 'ビーカー', kind: 0, rea: 2, dropBy: [], treasureFrom: [] },
+      {id: 25, name: 'ゴルナイト', kind: 0, rea: 2, dropBy: [], treasureFrom: [] },
+      {id: 26, name: '発火灰', kind: 0, rea: 2, dropBy: [], treasureFrom: [15, 16] },
     ]
   }
 }
