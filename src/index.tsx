@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {render} from 'react-dom';
 import Item from './item'
+import Enemy from './enemy'
 
 interface AppProps {}
 interface AppState {
@@ -23,12 +24,20 @@ class App extends React.Component<AppProps, AppState> {
   render () {
     let currentItemArea: any = null
     if(this.state.currentItem) {
-      currentItemArea = <div>{this.state.currentItem.name}</div>
+      currentItemArea = <div>
+        {this.state.currentItem.name}
+        <ul>
+          {this.state.currentItem.enemies().map((enemy) =>
+            <li key={enemy.id}>討伐: {enemy.name}</li>
+          )}
+        </ul>
+      </div>
     }
 
-    return <div><ul>
+    return <div>
+      <ul>
         {Item.records.map((item) =>
-          <li key={item.id} onClick={this.clickItem.bind(this, item)}>{item.name}</li>
+          <li key={item.id}><a href="#" onClick={this.clickItem.bind(this, item)}>{item.name}</a></li>
         )}
       </ul>
       {currentItemArea}

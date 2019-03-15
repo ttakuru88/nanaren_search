@@ -44,9 +44,9 @@ export default class Enemy extends Model {
       {id: 23, placeId: 6, name: '?', lv: 1, formation: [2], aromaId: null},
       {id: 24, placeId: 6, name: '?', lv: 1, formation: [2], aromaId: null},
       {id: 25, placeId: 7, name: '?', lv: 67, formation: [0], aromaId: null},
-      {id: 26, placeId: 7, name: '?', lv: 88, formation: [2, 2, 0], aromaId: null},
+      {id: 26, placeId: 7, name: '樹の長蛇', lv: 88, formation: [2, 2, 0], aromaId: null},
     ]
   }
 }
 
-Item.init()
+Enemy.init()

@@ -1,5 +1,5 @@
 import Model from './model'
-
+import Enemy from './enemy'
 // kind: mat: 0, anima: 1, aroma: 2, acs: 3
 
 export default class Item extends Model {
@@ -18,10 +18,16 @@ export default class Item extends Model {
     this.treasureFrom = data.treasureFrom
   }
 
+  enemies(): Enemy[] {
+    return this.dropBy.map((enemyId) => {
+      return Enemy.find(enemyId)
+    })
+  }
+
   static data() : any[] {
     return [
       {id: 1, name: 'わらの束', kind: 0, rea: 1, dropBy: [], treasureFrom: [2, 6, 10, 11, 12, 13] },
-      {id: 2, name: '木の枝', kind: 0, rea: 1, dropBy: [], treasureFrom: [1, 2, 4, 6, 9, 12, 21, 22, 23] },
+      {id: 2, name: '木の枝', kind: 0, rea: 1, dropBy: [26], treasureFrom: [1, 2, 4, 6, 9, 12, 21, 22, 23] },
       {id: 3, name: '丈夫な縄', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
       {id: 4, name: '葉の雫', kind: 0, rea: 1, dropBy: [], treasureFrom: [3, 4, 5, 22] },
       {id: 5, name: 'ヒワリの種', kind: 0, rea: 1, dropBy: [], treasureFrom: [3] },

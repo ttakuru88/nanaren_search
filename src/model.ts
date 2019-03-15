@@ -13,4 +13,16 @@ export default class Model {
   static data() : any[] {
     return []
   }
+
+  static find(id: number): any {
+    let model
+    this.records.forEach((record) => {
+      if(record.id == id) {
+        model = record
+        return
+      }
+    })
+
+    return model
+  }
 }
