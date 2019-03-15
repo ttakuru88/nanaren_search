@@ -148,6 +148,42 @@ export default class Recipe extends Model {
         {itemId: 42, amount: 2},
         {itemId: 27, amount: 2},
       ]},
+      {id: 26, itemId: 63, price: 50, rank: 1, materials: [
+        {itemId: 61, amount: 1},
+        {itemId: 62, amount: 3},
+        {itemId: 59, amount: 3},
+      ]},
+      {id: 27, itemId: 64, price: 50, rank: 1, materials: [
+        {itemId: 52, amount: 2},
+        {itemId: 13, amount: 2},
+        {itemId: 53, amount: 1},
+      ]},
+      {id: 28, itemId: 66, price: 1500, rank: 1, materials: [
+        {itemId: 65, amount: 2},
+        {itemId: 64, amount: 2},
+        {itemId: 53, amount: 1},
+      ]},
+      {id: 29, itemId: 69, price: 50, rank: 1, materials: [
+        {itemId: 60, amount: 1},
+        {itemId: 67, amount: 1},
+        {itemId: 62, amount: 3},
+        {itemId: 8, amount: 5},
+        {itemId: 68, amount: 3},
+      ]},
+      {id: 30, itemId: 71, price: 50, rank: 1, materials: [
+        {itemId: 64, amount: 1},
+        {itemId: 70, amount: 3},
+        {itemId: 63, amount: 1},
+        {itemId: 30, amount: 1},
+        {itemId: 53, amount: 1},
+      ]},
+      {id: 31, itemId: 73, price: 50, rank: 1, materials: [
+        {itemId: 56, amount: 1},
+        {itemId: 34, amount: 3},
+        {itemId: 58, amount: 1},
+        {itemId: 72, amount: 1},
+        {itemId: 53, amount: 1},
+      ]},
     ]
   }
 }

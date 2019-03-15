@@ -98,6 +98,19 @@ export default class Item extends Model {
       {id: 58, name: 'イブンの粉末', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
       {id: 59, name: 'グラビティメタル', kind: 0, rea: 3, dropBy: [], treasureFrom: [16] },
       {id: 60, name: 'オリハルコン', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 61, name: 'コバルト磁石', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 62, name: '畜分片', kind: 0, rea: 1, dropBy: [], treasureFrom: [3] },
+      {id: 63, name: '共振導石', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 64, name: 'オーパルフォトン', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 65, name: '陽珀石', kind: 0, rea: 4, dropBy: [], treasureFrom: [] },
+      {id: 66, name: 'ヘリオスタイド', kind: 0, rea: 4, dropBy: [], treasureFrom: [] },
+      {id: 67, name: '逢魔の黒煙', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 68, name: '青銅の鏡片', kind: 0, rea: 3, dropBy: [], treasureFrom: [18, 19] },
+      {id: 69, name: 'ネオフラグメント', kind: 0, rea: 5, dropBy: [], treasureFrom: [] },
+      {id: 70, name: '塩針晶', kind: 0, rea: 4, dropBy: [], treasureFrom: [] },
+      {id: 71, name: 'アルケウス', kind: 0, rea: 5, dropBy: [], treasureFrom: [] },
+      {id: 72, name: '醸麗酒', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 73, name: 'ヘルメスの霊薬', kind: 0, rea: 5, dropBy: [], treasureFrom: [] },
     ]
   }
 }
