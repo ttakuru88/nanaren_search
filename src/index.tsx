@@ -23,18 +23,28 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   itemEl(item: Item, deps = 0, amount?: number): any {
-    return <div>
-      {item.name} {amount ? `× ${amount}` : ''}
-      <ul>
-        {item.adventures().map((adventure) =>
-          <li key={`${deps}-adventure-${adventure.id}`}>探索: {adventure.place().name} -> {adventure.name}</li>
-        )}
-        {item.enemies().map((enemy) =>
-          <li key={`${deps}-enemy-${enemy.id}`}>討伐: {enemy.name}</li>
-        )}
-        {this.recipeEl(item.recipe(), deps)}
-      </ul>
-    </div>
+    let itemlist = <ul>
+      {item.adventures().map((adventure) =>
+        <li key={`${deps}-adventure-${adventure.id}`}>探索: {adventure.place().name} -> {adventure.name}</li>
+      )}
+      {item.enemies().map((enemy) =>
+        <li key={`${deps}-enemy-${enemy.id}`}>討伐: {enemy.name}</li>
+      )}
+      {this.recipeEl(item.recipe(), deps)}
+    </ul>
+
+    if(deps > 0) {
+      return <details>
+        <summary>{item.name} {`× ${amount}`}</summary>
+        {itemlist}
+      </details>
+    }
+    else {
+      return <div>
+        {item.name}
+        {itemlist}
+      </div>
+    }
   }
 
   recipeEl(recipe: Recipe, deps = 0): any {
