@@ -79,6 +79,33 @@ export default class Recipe extends Model {
         {itemId: 29, amount: 2},
         {itemId: 24, amount: 1},
       ]},
+      {id: 13, itemId: 33, price: 50, rank: 1, materials: [
+        {itemId: 31, amount: 3},
+        {itemId: 32, amount: 1},
+        {itemId: 7, amount: 1},
+      ]},
+      {id: 14, itemId: 35, price: 300, rank: 1, materials: [
+        {itemId: 34, amount: 2},
+        {itemId: 16, amount: 1},
+        {itemId: 24, amount: 2},
+      ]},
+      {id: 15, itemId: 36, price: 300, rank: 1, materials: [
+        {itemId: 27, amount: 2},
+        {itemId: 16, amount: 1},
+        {itemId: 24, amount: 2},
+      ]},
+      {id: 16, itemId: 39, price: 50, rank: 1, materials: [
+        {itemId: 37, amount: 1},
+        {itemId: 38, amount: 2},
+        {itemId: 5, amount: 1},
+        {itemId: 24, amount: 1},
+      ]},
+      {id: 17, itemId: 34, price: 50, rank: 1, materials: [
+        {itemId: 40, amount: 2},
+        {itemId: 18, amount: 1},
+        {itemId: 7, amount: 2},
+        {itemId: 24, amount: 2},
+      ]},
     ]
   }
 }

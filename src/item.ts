@@ -68,6 +68,16 @@ export default class Item extends Model {
       {id: 28, name: '硫黄塊', kind: 0, rea: 2, dropBy: [], treasureFrom: [15] },
       {id: 29, name: '幽か火', kind: 0, rea: 1, dropBy: [], treasureFrom: [] },
       {id: 30, name: 'メニスの炎', kind: 0, rea: 2, dropBy: [], treasureFrom: [] },
+      {id: 31, name: '巫樹の落葉', kind: 0, rea: 2, dropBy: [], treasureFrom: [22] },
+      {id: 32, name: '獣の抜け毛', kind: 0, rea: 1, dropBy: [], treasureFrom: [12] },
+      {id: 33, name: '斑らな毛皮', kind: 0, rea: 2, dropBy: [], treasureFrom: [] },
+      {id: 34, name: 'お手製魔法薬', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 35, name: '攻上の指南書', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 36, name: '防上の指南書', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 37, name: 'ハゼクルミ', kind: 0, rea: 3, dropBy: [], treasureFrom: [7] },
+      {id: 38, name: '麻の布', kind: 0, rea: 1, dropBy: [], treasureFrom: [22] },
+      {id: 39, name: 'コルブオイル', kind: 0, rea: 3, dropBy: [], treasureFrom: [] },
+      {id: 40, name: '丸磨サボテン', kind: 0, rea: 3, dropBy: [], treasureFrom: [17] },
     ]
   }
 }
