@@ -15,14 +15,17 @@ export default class Model {
   }
 
   static find(id: number): any {
+    return this.findBy('id', id)
+  }
+
+  static findBy(attr: string, value: number): any {
     let model
     this.records.forEach((record) => {
-      if(record.id == id) {
+      if(record[attr] == value) {
         model = record
         return
       }
     })
-
     return model
   }
 }

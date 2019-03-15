@@ -1,6 +1,7 @@
 import Model from './model'
 import Enemy from './enemy'
 import Adventure from './adventure'
+import Recipe from './recipe'
 // kind: mat: 0, anima: 1, aroma: 2, acs: 3
 
 export default class Item extends Model {
@@ -29,6 +30,10 @@ export default class Item extends Model {
     return this.treasureFrom.map((adventureId) => {
       return Adventure.find(adventureId)
     })
+  }
+
+  recipe(): Recipe {
+    return Recipe.findBy('itemId', this.id)
   }
 
   static data() : any[] {

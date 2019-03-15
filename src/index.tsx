@@ -2,6 +2,7 @@ import * as React from 'react';
 import {render} from 'react-dom';
 import Item from './item'
 import Enemy from './enemy'
+import Recipe from './recipe'
 
 interface AppProps {}
 interface AppState {
@@ -21,24 +22,41 @@ class App extends React.Component<AppProps, AppState> {
     this.setState({currentItem: item})
   }
 
-  itemElement(item: Item): any {
+  itemEl(item: Item, deps = 0, amount?: number): any {
     return <div>
-      {item.name}
+      {item.name} {amount ? `× ${amount}` : ''}
       <ul>
         {item.adventures().map((adventure) =>
-          <li key={adventure.id}>探索: {adventure.place().name} -> {adventure.name}</li>
+          <li key={`${deps}-adventure-${adventure.id}`}>探索: {adventure.place().name} -> {adventure.name}</li>
         )}
         {item.enemies().map((enemy) =>
-          <li key={enemy.id}>討伐: {enemy.name}</li>
+          <li key={`${deps}-enemy-${enemy.id}`}>討伐: {enemy.name}</li>
         )}
+        {this.recipeEl(item.recipe(), deps)}
       </ul>
     </div>
+  }
+
+  recipeEl(recipe: Recipe, deps = 0): any {
+    if(recipe) {
+      return <div>
+        <p>錬成 {recipe.price} Rin</p>
+        {recipe.materials().map((material) =>
+          <div key={`${deps}-material-${recipe.id}-${material.item.id}`}>
+            {this.itemEl(material.item, deps + 1, material.amount)}
+          </div>
+        )}
+      </div>
+    }
+    else {
+      return null
+    }
   }
 
   render () {
     let currentItemArea: any = null
     if(this.state.currentItem) {
-      currentItemArea = this.itemElement(this.state.currentItem)
+      currentItemArea = this.itemEl(this.state.currentItem)
     }
 
     return <div>
