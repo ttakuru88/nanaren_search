@@ -6,7 +6,7 @@ const dist = path.resolve(__dirname, 'dist')
 
 export default {
   mode: 'development',
-  entry: src + '/index.jsx',
+  entry: src + '/index.tsx',
 
   output: {
     path: dist,
@@ -15,16 +15,13 @@ export default {
 
   module: {
     rules: [
-      {
-        test: /\.jsx$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      }
+      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
   },
 
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js']
   },
 
   plugins: [
